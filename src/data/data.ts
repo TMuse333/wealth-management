@@ -173,7 +173,54 @@ export const solutionsCardDetails = [
     
 
 ]
-//src/media/gemeni-dessert-money.jpg
+
+export const serviceGridData = [
+    {
+        name: 'Service One',
+        description: 'Lorem ipsum dolor sit amet',
+        image: 'service1.jpg',
+        halfImage: false
+    },
+    {
+        name: 'Service Two',
+        description: 'Consectetur adipiscing elit',
+        image: 'service2.jpg',
+        halfImage: true
+    },
+    {
+        name: 'Service Three',
+        description: 'Sed do eiusmod tempor',
+        image: 'service3.jpg',
+        halfImage: false
+    },
+    {
+        name: 'Service Four',
+        description: 'Incididunt ut labore et dolore',
+        image: 'service4.jpg',
+        halfImage: true
+    }
+];
+
+
+export const optionsGridServiceBar = [
+    {
+        name: 'Option One',
+        description: 'Lorem ipsum'
+    },
+    {
+        name: 'Option Two',
+        description: 'Dolor sit amet'
+    },
+    {
+        name: 'Option Three',
+        description: 'Consectetur adipiscing'
+    },
+    {
+        name: 'Option Four',
+        description: 'Sed do eiusmod'
+    }
+]
+
 
 
 

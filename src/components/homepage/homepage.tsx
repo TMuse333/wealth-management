@@ -1,5 +1,7 @@
 import { Solutions } from "../solutions/solutions"
-import { solutionsOptions, solutionsDetails,solutionsCardDetails } from "../../data/data"
+import { solutionsOptions, solutionsDetails,solutionsCardDetails
+,optionsGridServiceBar, serviceGridData } from "../../data/data"
+import OptionsGrid from "../optionsGrid/optionsGrid"
 
 
 
@@ -13,6 +15,11 @@ export const Homepage = () => {
           options={solutionsOptions}
           solutionsDetails={solutionsDetails}
           solutionsCardDetails={solutionsCardDetails}
+          />
+
+          <OptionsGrid
+          serviceOptions={serviceGridData}
+          options={optionsGridServiceBar}
           />
          
         </section>

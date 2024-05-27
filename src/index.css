@@ -14,3 +14,11 @@ h1{
 .glow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Adjust the values for the desired shadow effect */
 }
+
+.bg-gradient-radial {
+  /* Radial Gradient */
+  background-image: radial-gradient(circle, #c4e0f5 45%, #7ddeff 100%);
+  /* Adjust background size and position as per approximation */
+  background-size: 200% 300%;
+  background-position: center 95%;
+}

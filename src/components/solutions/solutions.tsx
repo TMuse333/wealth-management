@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import OptionsBar from "../optionsBar/optionsBar";
 
 interface optionsProps {
   options: {
@@ -20,6 +21,8 @@ interface optionsProps {
       }[];
     };
   }[];
+
+  
   solutionsCardDetails: {
     image: {
       src: string;
@@ -39,14 +42,16 @@ export const Solutions: React.FC<optionsProps> = (
   const [selectedOption, setSelectedOption] = useState<number>(0);
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-100 from-30% to-blue-200 to-70%">
-      <SolutionsOptions
+    <section className="relative bg-gradient-to-br from-blue-100 from-30% to-blue-200 to-70%
+    ">
+      <OptionsBar
         options={options}
         setSelectedOption={setSelectedOption}
         selectedOption={selectedOption}
       />
       <AnimatePresence mode='wait'>
-        <section className="flex flex-col md:flex-row ml-auto mr-auto w-screen md:w-[90vw] max-w-[1300px]">
+        <section className="flex flex-col md:flex-row ml-auto mr-auto w-screen md:w-[90vw] max-w-[1300px]
+        mt-8">
           <motion.article
             key={selectedOption}
             initial={{ opacity: 0 }}
@@ -99,50 +104,6 @@ export const Solutions: React.FC<optionsProps> = (
         </button>
       </div>
     </section>
-  );
-};
-
-interface OptionsBar {
-  options: {
-    name: string;
-    description: string;
-  }[];
-  setSelectedOption: React.Dispatch<React.SetStateAction<number>>;
-  selectedOption: number;
-}
-
-const SolutionsOptions: React.FC<OptionsBar> = ({ options, setSelectedOption, selectedOption }) => {
-  return (
-    <div className="bg-light-blue w-screen flex relative h-[100px] overflow-x-hidden border-blue-100 border-b-4">
-      <div className="w-screen overflow-scroll relative flex">
-        {options.map((option, index) => (
-          <div
-            key={index}
-            onClick={() => setSelectedOption(index)}
-            className={`bg-[#F8F8F8] bg-gradient-to-b from-light-blue to-light-blue text-black w-[33vw] h-[80px] min-w-[150px] absolute hover:bg-gray-100 transition-colors ${index === selectedOption ? 'border-indigo-800 border-b-4' : ''}`}
-            style={{ transform: `translateX(${index * 100}%)` }}
-          >
-            <h2
-              className=""
-              style={{
-                fontWeight: selectedOption === index ? 'bold' : '500',
-                transition: 'font-weight 0.3s ease-in'
-              }}
-            >
-              {option.name}
-            </h2>
-            <p
-              style={{
-                fontWeight: selectedOption === index ? 'bold' : '500',
-                transition: 'font-weight 0.3s ease-in'
-              }}
-            >
-              {option.description}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
   );
 };
 
