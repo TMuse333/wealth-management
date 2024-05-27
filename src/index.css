@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root{
-  background-color: white;
+  background-color: #a9d6e6;
+  background-color: #DBEAFE;
 }
 
 h1{

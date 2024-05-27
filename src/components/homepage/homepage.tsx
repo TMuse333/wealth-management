@@ -7,7 +7,7 @@ export const Homepage = () => {
 
     return (
         <section className="absolute top-0 left-0
-        w-screen bg-white">
+        w-screen bg-blue-200">
             
           <Solutions
           options={solutionsOptions}
