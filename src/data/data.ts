@@ -174,32 +174,103 @@ export const solutionsCardDetails = [
 
 ]
 
+// data.ts
+
 export const serviceGridData = [
     {
-        name: 'Service One',
-        description: 'Lorem ipsum dolor sit amet',
-        image: '',
-        halfImage: true
+        name: 'Wealth Management',
+        serviceOptions: [
+            {
+                name: 'Portfolio Management',
+                description: 'Experts manage tailored investment portfolios for financial goals.',
+                image: 'src/media/wealth-management-1.jpeg',
+                halfImage: true
+            },
+            {
+                name: 'Retirement Planning',
+                description: 'Navigate retirement options, optimize savings, plan financially comfortable retirement.',
+                image: 'src/media/futuristic-money-ball-removebg-preview.png',
+                halfImage: false
+            },
+            {
+                name: 'Estate Planning',
+                description: 'Preserve legacy, ensure assets distributed, minimize taxes with planning.',
+                image: 'src/media/futuristic-money-ball-removebg-preview.png',
+                halfImage: false
+            },
+            {
+                name: 'Tax Optimization',
+                description: 'Minimize tax burden, maximize savings with tax optimization strategies.',
+                image: 'src/media/futuristic-money-ball-removebg-preview.png',
+                halfImage: false
+            }
+        ]
     },
     {
-        name: 'Service Two',
-        description: 'Consectetur adipiscing elit',
-        image: '',
-        halfImage: false
+        name: 'Investment Advisory',
+        serviceOptions: [
+            {
+                name: 'Investment Advisory',
+                description: 'Get personalized advice, make informed decisions, optimize portfolio.',
+                image: 'src/media/wealth-management-2.jpeg',
+                halfImage: true
+            },
+            {
+                name: 'Education Planning',
+                description: 'Secure children\'s future, save tuition, navigate financial aid options.',
+                image: 'src/media/gemeni-coins.jpg',
+                halfImage: false
+            },
+            {
+                name: 'Wealth Transfer',
+                description: 'Plan future wealth, ensure smooth transition, minimize tax implications.',
+                image: 'src/media/gemeni-coins.jpg',
+                halfImage: false
+            },
+            {
+                name: 'Risk Management',
+                description: 'Protect assets, minimize risks, implement effective risk mitigation measures.',
+                image: 'src/media/gemeni-coins.jpg',
+                halfImage: false
+            }
+        ]
     },
     {
-        name: 'Service Three',
-        description: 'Sed do eiusmod tempor',
-        image: '',
-        halfImage: false
-    },
-    {
-        name: 'Service Four',
-        description: 'Incididunt ut labore et dolore',
-        image: '',
-        halfImage: false
+        name: 'Financial Planning',
+        serviceOptions: [
+            {
+                name: 'Financial Planning',
+                description: 'Achieve financial goals, create roadmap, manage investments, plan future.',
+                image: 'src/media/gemeni-dessert-money.jpg',
+                halfImage: true
+            },
+            {
+                name: 'Debt Management',
+                description: 'Manage debt efficiently, reduce interest payments, achieve financial freedom.',
+                image: 'src/media/gemeni-dessert-money.jpg',
+                halfImage: false
+            },
+            {
+                name: 'Insurance Planning',
+                description: 'Protect assets, mitigate risks, secure financial future with insurance.',
+                image: 'src/media/gemeni-dessert-money.jpg',
+                halfImage: false
+            },
+            {
+                name: 'Being a real one',
+                description: 'Hustlers dont stop they keep going',
+                image: 'src/media/gemeni-dessert-money.jpg',
+                halfImage: false
+            },
+
+            // Add more options for Financial Planning here if needed
+        ]
     }
 ];
+
+
+
+
 
 
 export const optionsGridServiceBar = [

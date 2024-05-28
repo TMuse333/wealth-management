@@ -7,10 +7,10 @@ import wealthImg from '../../media/wealth-management-1.jpeg'
 import moneyball from '../../media/futuristic-money-ball-removebg-preview.png'
 export const Homepage = () => {
 
-  serviceGridData[0].image = wealthImg
-  serviceGridData[1].image = moneyball
-  serviceGridData[2].image = moneyball
-  serviceGridData[3].image = moneyball
+  // serviceGridData[0].image = wealthImg
+  // serviceGridData[1].image = moneyball
+  // serviceGridData[2].image = moneyball
+  // serviceGridData[3].image = moneyball
   // serviceGridData[4].image = moneyball
 
     return (
@@ -24,8 +24,8 @@ export const Homepage = () => {
           />
 
           <OptionsGrid
-          serviceOptions={serviceGridData}
-          options={optionsGridServiceBar}
+          options={serviceGridData}
+          barOptions={optionsGridServiceBar}
           />
          
         </section>

@@ -9,6 +9,7 @@ export default {
       screens:{
         'sm':'655px',
         'md':'865px',
+        'lg':'1000px'
       },
       colors:{
         'light-blue': '#cce2fc',
