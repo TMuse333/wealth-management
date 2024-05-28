@@ -178,26 +178,26 @@ export const serviceGridData = [
     {
         name: 'Service One',
         description: 'Lorem ipsum dolor sit amet',
-        image: 'service1.jpg',
-        halfImage: false
+        image: '',
+        halfImage: true
     },
     {
         name: 'Service Two',
         description: 'Consectetur adipiscing elit',
-        image: 'service2.jpg',
-        halfImage: true
+        image: '',
+        halfImage: false
     },
     {
         name: 'Service Three',
         description: 'Sed do eiusmod tempor',
-        image: 'service3.jpg',
+        image: '',
         halfImage: false
     },
     {
         name: 'Service Four',
         description: 'Incididunt ut labore et dolore',
-        image: 'service4.jpg',
-        halfImage: true
+        image: '',
+        halfImage: false
     }
 ];
 
